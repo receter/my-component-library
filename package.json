@@ -2,7 +2,7 @@
   "name": "@receter/my-component-library",
   "author": "Andreas Riedmüller",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
