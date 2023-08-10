@@ -1,7 +1,7 @@
 {
   "name": "@receter/my-component-library",
   "author": "Andreas Riedmüller",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
   "type": "module",
   "main": "dist/main.js",
@@ -27,8 +27,6 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "@types/node": "^20.4.8",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
@@ -39,6 +37,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "glob": "^10.3.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-plugin-dts": "^3.5.1",
