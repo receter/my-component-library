@@ -1,4 +1,21 @@
-# React + TypeScript + Vite
+# A simple (demo) react component libarary
+This repository was published along with an article on [how to create a react component library](https://dev.to/receter/how-to-create-a-react-component-library-using-vites-library-mode-4lma) with Vite's library mode.
+
+second repo that consumes this libarary: https://github.com/receter/my-component-library-consumer
+
+## Installation
+You can install it with npm (don't expect much fanciness):
+```bash
+npm i @receter/my-component-library
+```
+
+## Usage
+```javascript
+import { Button, Label, Input } from '@receter/my-component-library';
+```
+See this file for an example on using this library: https://github.com/receter/my-component-library-consumer/blob/main/src/App.tsx
+
+## React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -7,7 +24,7 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+### Expanding the ESLint configuration
 
 If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
