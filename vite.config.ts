@@ -11,7 +11,7 @@ export default defineConfig({
   plugins: [
     react(),
     libInjectCss(),
-    dts({ include: ['lib'] })
+    dts({ include: ['lib'], copyDtsFiles: true })
   ],
   build: {
     copyPublicDir: false,
@@ -23,7 +23,7 @@ export default defineConfig({
       external: ['react', 'react/jsx-runtime'],
       input: Object.fromEntries(
         // https://rollupjs.org/configuration-options/#input
-        glob.sync('lib/**/*.{ts,tsx}').map(file => [
+        glob.sync('lib/**/!(*.d).{ts,tsx}').map(file => [
           // 1. The name of the entry point
           // lib/nested/foo.js becomes nested/foo
           relative(
