@@ -13,9 +13,6 @@
     "type": "git",
     "url": "https://github.com/receter/my-component-library"
   },
-  "sideEffects": [
-    "**/*.css"
-  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc --p ./tsconfig-build.json && vite build",
@@ -41,7 +38,6 @@
     "react-dom": "^18.2.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
-    "vite-plugin-dts": "^3.5.1",
-    "vite-plugin-lib-inject-css": "^1.2.0"
+    "vite-plugin-dts": "^3.5.1"
   }
 }
