@@ -1,7 +1,7 @@
 import { useCounter } from 'usehooks-ts';
 import styles from './styles.module.css'
 
-export function Button(props: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+export function Button2(props: React.ButtonHTMLAttributes<HTMLButtonElement>) {
   const { className, onClick, children, ...restProps } = props;
   const { count, increment } = useCounter();
 
