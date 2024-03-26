@@ -1,7 +1,11 @@
-# A simple (demo) react component libarary
-This repository was published along with an article on [how to create a react component library](https://dev.to/receter/how-to-create-a-react-component-library-using-vites-library-mode-4lma) with Vite's library mode.
+<img width="500" alt="ViteReactComponentLibrary" src="https://github.com/receter/my-component-library/assets/2504695/dbb53036-d228-477b-8cf8-f61cd6130776">
 
-second repo that consumes this libarary: https://github.com/receter/my-component-library-consumer
+# A simple (demo) react component library
+This repository was published together with an article on [how to create a react component library](https://dev.to/receter/how-to-create-a-react-component-library-using-vites-library-mode-4lma) using Vite's library mode.
+
+Here is another repo that consumes this libarary: https://github.com/receter/my-component-library-consumer
+
+The demo library on npm: https://www.npmjs.com/package/@receter/my-component-library
 
 ## Installation
 You can install it with npm (don't expect much fanciness):
