@@ -20,7 +20,7 @@ export default defineConfig({
       formats: ['es']
     },
     rollupOptions: {
-      external: ['react', 'react/jsx-runtime'],
+      external: ['react', 'react/jsx-runtime', /lodash\/.*/],
       input: Object.fromEntries(
         // https://rollupjs.org/configuration-options/#input
         glob.sync('lib/**/*.{ts,tsx}').map(file => [

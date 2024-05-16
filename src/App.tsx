@@ -34,8 +34,9 @@ function App() {
           value={inputCustomCountValue}
           onChange={(e) => setInputCustomCountValue(e.target.value)}
         /><br />
+        <p>count is {count}</p>
         <Button onClick={handleClickCustomCount}>
-          count is {count}
+          click me!
         </Button>
         <p>
           Edit <code>src/App.tsx</code> and save to test HMR
