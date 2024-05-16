@@ -8,19 +8,19 @@ const coreComponentsDirectory = await readdir(coreComponentsDirectoryPath);
 
 const paths = {
 	'.': {
-        types: './dist/main.d.ts',
-        default: './dist/main.js'
-    }
+		types: './dist/main.d.ts',
+		default: './dist/main.js'
+	}
 };
 
 for (const item of coreComponentsDirectory) {
-		const filesInDirectory = await readdir(new URL(`${item}/`, coreComponentsDirectoryPath));
-		if (filesInDirectory.length) {
-			paths[`./${item}`] = {
-                types: `./dist/components/${item}/${filesInDirectory[0].replace(/\.tsx$/, '.d.ts')}`,
-                default: `./dist/components/${item}/${filesInDirectory[0].replace(/\.tsx$/, '.js')}`
-            };
-		}
+	const filesInDirectory = await readdir(new URL(`${item}/`, coreComponentsDirectoryPath));
+	if (filesInDirectory.length) {
+		paths[`./${item}`] = {
+			types: `./dist/components/${item}/${filesInDirectory[0].replace(/\.tsx$/, '.d.ts')}`,
+			default: `./dist/components/${item}/${filesInDirectory[0].replace(/\.tsx$/, '.js')}`
+		};
+	}
 }
 
 corePackageJson.exports = paths;
