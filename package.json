@@ -13,9 +13,6 @@
     "type": "git",
     "url": "https://github.com/receter/my-component-library"
   },
-  "sideEffects": [
-    "**/*.css"
-  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc --p ./tsconfig-build.json && vite build",
@@ -43,5 +40,30 @@
     "vite": "^4.5.3",
     "vite-plugin-dts": "^3.7.3",
     "vite-plugin-lib-inject-css": "^2.0.1"
-  }
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "default": "./dist/main.js"
+    },
+    "./Button": {
+      "types": "./dist/components/Button/index.d.ts",
+      "default": "./dist/components/Button/index.js"
+    },
+    "./Input": {
+      "types": "./dist/components/Input/index.d.ts",
+      "default": "./dist/components/Input/index.js"
+    },
+    "./Label": {
+      "types": "./dist/components/Label/index.d.ts",
+      "default": "./dist/components/Label/index.js"
+    }
+  },
+  "sideEffects": [
+    "**/*.css",
+    "./dist/main.js",
+    "./dist/components/Button/index.js",
+    "./dist/components/Input/index.js",
+    "./dist/components/Label/index.js"
+  ]
 }
