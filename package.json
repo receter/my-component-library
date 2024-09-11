@@ -6,7 +6,7 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/main.d.ts",
+      "types": "./dist/lib/main.d.ts",
       "default": "./dist/main.js"
     }
   },
