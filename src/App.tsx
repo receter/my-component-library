@@ -2,7 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { Button, Label, Input } from '../';
+
+// https://nodejs.org/api/packages.html#packages_self_referencing_a_package_using_its_name
+import { Button, Label, Input } from '@receter/my-component-library';
 
 function App() {
   const [count, setCount] = useState(0)
