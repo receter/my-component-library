@@ -5,10 +5,12 @@ import { glob } from 'glob'
 import react from '@vitejs/plugin-react'
 import dts from 'vite-plugin-dts'
 import { libInjectCss } from 'vite-plugin-lib-inject-css'
+import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    vanillaExtractPlugin(),
     react(),
     libInjectCss(),
     dts({
@@ -26,7 +28,7 @@ export default defineConfig({
       input: Object.fromEntries(
         // https://rollupjs.org/configuration-options/#input
         glob.sync('lib/**/*.{ts,tsx}', {
-          ignore: ["lib/**/*.d.ts"],
+          ignore: ["lib/**/*.d.ts", "lib/**/*.css.ts"],
         }).map(file => [
           // 1. The name of the entry point
           // lib/nested/foo.js becomes nested/foo

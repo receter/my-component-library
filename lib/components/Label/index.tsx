@@ -1,4 +1,4 @@
-import styles from './styles.module.css'
+import * as styles from './styles.css'
 
 export function Label(props: React.LabelHTMLAttributes<HTMLLabelElement>) {
   const { className, ...restProps } = props
